@@ -13,7 +13,6 @@ def test_navigation_dz(browser):
     alerts_page = AlertsPage(browser)
 
     modal_dialog_page.visit()
-    browser.refresh()
     modal_dialog_page.btn_alerts.click()
     browser.back()
     browser.set_window_size(width=900, height=400)
