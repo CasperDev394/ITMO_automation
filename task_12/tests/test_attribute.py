@@ -12,7 +12,7 @@ def test_placeholder(browser):
     text_box_page = TextBoxPage(browser)
 
     text_box_page.visit()
-    assert text_box_page.full_name.get_dom_attribute('placeholder') == 'Full Name'
+    assert text_box_page.full_name.get_dom_attribute('placeholder') == 'Full Name1'
 
 
 @allure.feature('check attr')
@@ -36,12 +36,12 @@ def test_attr_not_exist(browser):
     text_box_page = TextBoxPage(browser)
 
     text_box_page.visit()
-    assert not text_box_page.btn_first.get_dom_attribute('style')
+    assert not text_box_page.btn_first.get_dom_attribute('style11')
 
 
 @allure.feature('check attr')
 @allure.story('Проверка упавшего теста')
 @allure.severity(allure.severity_level.BLOCKER)
 def test_fail():
-    assert 111 == 222
+    assert 221 == 222
 
