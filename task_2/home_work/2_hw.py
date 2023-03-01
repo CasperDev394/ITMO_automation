@@ -25,7 +25,7 @@ task_2()
 
 
 def task_3(i: int) -> int:
-    return i*i
+    return i**2
 
 
 print(task_3(3))
